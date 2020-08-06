@@ -5,7 +5,7 @@
 Bikeshare
 
 ### Description
-Running and displaying statistics on bikeshare data from there cities with interactive user inputs
+Calculate and display statistics on U.S. bikeshare data from three cities with interactive user inputs where the user chooses the data and filter for a dataset to analyze.
 
 ### Files used
 bikeshare.py
