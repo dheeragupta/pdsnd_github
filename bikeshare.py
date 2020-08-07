@@ -186,7 +186,7 @@ def user_stats(df):
     print('-'*40)
 
 
-def display_data(df, head = 0, tail = 5):
+def display_data(df, start_i = 0, end_i = 5):
     """Displays 5 lines of raw data at a time upon request from user. Continue displaying until user asks to stop.
     Args:
         data frame
@@ -198,14 +198,14 @@ def display_data(df, head = 0, tail = 5):
 
     while True:
         print("\n")
-        print(df.iloc[head:tail].to_string())
+        print(df.iloc[start_i:end_i].to_string())
         print("\n")
 
         display_trips = str(input("\nType 'yes' to continue viewing individual trip data. Press any other key to proceed to statistics: ")).lower()
         if display_trips == 'yes':
-            head = tail + 1
-            tail = tail + 5
-            display_data(df, head, tail)
+            start_i = end_i + 1
+            end_i = end_i + 5
+            display_data(df, start_i, end_i)
         else:
             break
         break
