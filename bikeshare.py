@@ -190,8 +190,8 @@ def display_data(df, start_i = 0, end_i = 5):
     """Displays 5 lines of raw data at a time upon request from user. Continue displaying until user asks to stop.
     Args:
         data frame
-        start index
-        end index
+        starting index
+        ending index
     Returns:
         none
     """
